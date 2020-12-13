@@ -9,7 +9,7 @@ Para realizar esse desafio foi utilizado css grid, flexbox e alguns recursos css
 # Como executar:
 Baixar o repositório e abrir o arquivo index.html no seu navegador ou abrir o link a seguir:
 
-wellingtonollv.github.io
+https://wellingtonollv.github.io/
 
 
 # Breve explicação:
