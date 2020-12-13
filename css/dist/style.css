@@ -1,0 +1,361 @@
+/*cores*/
+/*RESETS*/
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+/* visuais  */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*------*/
+/*--------------POLIGONO SUPERIOR-----------------------------*/
+.retangulo-superior {
+  position: relative;
+  height: 381px;
+  background-image: linear-gradient(#422755, #422755);
+}
+.retangulo-superior p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  line-height: 25px;
+  margin: -120px 0;
+  color: white;
+}
+.retangulo-superior h1 {
+  padding: 140px 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  color: white;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  transform: rotateY(180deg);
+}
+
+/*---------------------------*/
+.main {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1080px));
+  justify-content: center;
+  margin-top: 56px;
+}
+
+/*-----------NAV MENU--------------*/
+.nav-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #feaf3d;
+  border-radius: 8px;
+  padding: 10px;
+}
+.nav-menu form {
+  position: relative;
+}
+.nav-menu input {
+  width: 276px;
+  height: 34px;
+  padding-left: 15px;
+  border-radius: 8px 0 0 8px;
+}
+.nav-menu input:focus {
+  background-repeat: no-repeat;
+  border-color: none;
+  outline: 0;
+}
+.nav-menu #nav-button {
+  padding: 8px 10px;
+  background: #6e4b87;
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 8px;
+  text-align: center;
+  position: absolute;
+  transition: 0.3s;
+  right: 0;
+}
+.nav-menu #nav-button:focus {
+  background-repeat: no-repeat;
+  border-color: none;
+  outline: 0;
+  background-color: #262755;
+}
+.nav-menu #nav-button:hover {
+  background-color: #262755;
+}
+.nav-menu span {
+  font-family: Open Sans;
+  font-style: normal;
+  margin-right: 16px;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+.nav-menu #select {
+  float: left;
+}
+.nav-menu select {
+  width: 193px;
+  height: 34px;
+  border-radius: 8px;
+  padding-left: 15px;
+}
+.nav-menu select:focus {
+  background-repeat: no-repeat;
+  border-color: none;
+  outline: 0;
+}
+.nav-menu .busca {
+  width: 307px;
+  padding: 10px 0 10px 0;
+}
+.nav-menu .filtro {
+  padding: 10px 0 10px 0;
+}
+
+/*----------FIM DO NAV MENU----*/
+/*---------TAREFAS----------------*/
+.tarefas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 72px;
+  position: relative;
+}
+
+.tarefa-item {
+  width: 230px;
+  height: 350px;
+  border: solid 1px #422755;
+  border-radius: 14px;
+  padding: 10px;
+}
+.tarefa-item #alert-prazo {
+  position: absolute;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  align-items: center;
+  text-align: center;
+  background-color: #422755;
+  margin-bottom: 30px;
+  border-radius: 0px 5px 5px 0px;
+  color: #fff;
+  width: 102px;
+  top: 25px;
+  left: -4px;
+  padding: 6px;
+}
+.tarefa-item .image-tarefa {
+  height: 180px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+.tarefa-item img {
+  max-width: 100%;
+  display: block;
+}
+.tarefa-item .tarefa-texts {
+  display: table;
+  width: 100%;
+  height: 180px;
+  table-layout: fixed;
+}
+.tarefa-item .tarefa-texts .name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #414141;
+  display: table-header-group;
+}
+.tarefa-item .tarefa-texts .description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  width: 230px;
+  height: 50px;
+  display: table-header-group;
+}
+.tarefa-item .tarefa-texts .prazo {
+  padding-top: 5px;
+  font-size: 13px;
+}
+.tarefa-item .tarefa-texts .prazo-data {
+  font-size: 18px;
+  color: #f04837;
+  font-weight: bold;
+}
+.tarefa-item .tarefa-texts .btn {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #422755;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #422755;
+  transition: 0.3s;
+  padding: 3%;
+}
+.tarefa-item .tarefa-texts .btn:hover {
+  opacity: 1;
+  color: #fff;
+  background-color: #422755;
+}
+.tarefa-item .tarefa-texts .btn:focus {
+  border-color: none;
+  outline: 0;
+}
+.tarefa-item .tarefa-texts .inclusao {
+  padding-top: 6px;
+  padding-bottom: 13px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  color: #414141;
+}
+
+/*----------------------------*/
+/*------SOBRE A EMPRESA---------*/
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 83px;
+  justify-content: space-around;
+  align-items: center;
+}
+.about .text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #422755;
+  text-align: left;
+  max-width: 699px;
+}
+.about p {
+  padding: 9px;
+}
+.about .image-about {
+  padding-bottom: 54px;
+  padding-left: 54px;
+}
+
+/*---------------------------*/
+/*--------------------FOOTER------------------------------------*/
+footer .retangulo-footer {
+  position: relative;
+  height: 126px;
+  margin-top: 44px;
+  background-image: linear-gradient(#422755, #422755);
+  width: 100%;
+}
+footer .retangulo-footer p {
+  text-align: center;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 0;
+}
+footer .retangulo-footer #texto-footer {
+  padding-top: 50px;
+}
+
+/*---------------------------*/
+/*---------------MEDIAS-------------------*/
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    padding: 10px;
+  }
+
+  .tarefas {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .tarefa-item {
+    width: 89%;
+    height: auto;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    padding-inline: 5%;
+  }
+  .tarefa-item .img {
+    width: 147px;
+    height: 178px;
+  }
+  .tarefa-item .tarefa-texts {
+    padding-left: 25px;
+  }
+
+  .about {
+    padding-top: 0px;
+  }
+  .about .image-about {
+    padding-bottom: 54px;
+  }
+  .about .text {
+    text-align: center !important;
+    width: 309px;
+    height: 304px;
+    font-size: 12px !important;
+    padding: 0px 25px 0px 25px;
+  }
+
+  .retangulo-footer {
+    margin-top: 100px !important;
+  }
+}
+/*---------------------------------*/
