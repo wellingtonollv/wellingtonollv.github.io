@@ -64,7 +64,7 @@ html {
   color: white;
 }
 
-svg {
+.svg-header {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -385,6 +385,13 @@ footer .retangulo-footer #texto-footer {
   padding-top: 50px;
 }
 
+footer .retangulo-footer .svg-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+}
+
 /*---------------------------*/
 /*---------------MEDIAS-------------------*/
 @media only screen and (max-width: 768px) {
@@ -425,13 +432,8 @@ footer .retangulo-footer #texto-footer {
   }
   .about .text {
     text-align: center !important;
-    width: 309px;
-    height: 304px;
     font-size: 12px !important;
     padding: 0px 25px 0px 25px;
-  }
-  .retangulo-footer {
-    margin-top: 100px !important;
   }
 }
 
