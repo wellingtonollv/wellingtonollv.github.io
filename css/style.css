@@ -242,9 +242,9 @@ html {
 }
 
 .tarefa-item .tarefa-texts {
-  display: table !important;
+  display: -ms-grid;
+  display: grid;
   height: 180px;
-  table-layout: fixed;
 }
 
 .tarefa-item .tarefa-texts .name {
@@ -253,7 +253,6 @@ html {
   font-size: 14px;
   line-height: 19px;
   color: #414141;
-  display: table-header-group !important;
 }
 
 .tarefa-item .tarefa-texts .description {
@@ -263,11 +262,10 @@ html {
   line-height: 16px;
   color: #000000;
   height: 50px;
-  display: table-header-group !important;
 }
 
 .tarefa-item .tarefa-texts .prazo {
-  padding-top: 5px;
+  padding-top: 15px;
   font-size: 13px;
 }
 

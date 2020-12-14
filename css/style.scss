@@ -238,10 +238,10 @@ html {
     }
 
     .tarefa-texts {
-        display: table!important;
+        display: grid;
         
         height: 180px;
-        table-layout: fixed;
+        
 
         .name {
             font-style: normal;
@@ -249,7 +249,7 @@ html {
             font-size: 14px;
             line-height: 19px;
             color: #414141;
-            display: table-header-group!important;
+            
 
         }
 
@@ -261,11 +261,11 @@ html {
             color: #000000;
             
             height: 50px;
-            display: table-header-group!important;
+            
         }
 
         .prazo {
-            padding-top: 5px;
+            padding-top: 15px;
             font-size: 13px;
         }
 
