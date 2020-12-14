@@ -193,7 +193,7 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 72px;
     position: relative;
 }
@@ -221,7 +221,7 @@ html {
         width: 102px;
 
         top: 25px;
-        left: -4px;
+        left: 2.5%;
         padding: 6px;
     }
 
