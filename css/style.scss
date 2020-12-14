@@ -233,7 +233,7 @@ svg {
     }
 
     .tarefa-texts {
-        display: table;
+        display: table!important;
         width: 100%;
         height: 180px;
         table-layout: fixed;
@@ -244,7 +244,7 @@ svg {
             font-size: 14px;
             line-height: 19px;
             color: #414141;
-            display: table-header-group;
+            display: table-header-group!important;
 
         }
 
@@ -256,7 +256,7 @@ svg {
             color: #000000;
             width: 230px;
             height: 50px;
-            display: table-header-group;
+            display: table-header-group!important;
         }
 
         .prazo {
