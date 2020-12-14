@@ -192,7 +192,7 @@ svg {
   display: block;
 }
 .tarefa-item .tarefa-texts {
-  display: table;
+  display: table !important;
   width: 100%;
   height: 180px;
   table-layout: fixed;
@@ -203,7 +203,7 @@ svg {
   font-size: 14px;
   line-height: 19px;
   color: #414141;
-  display: table-header-group;
+  display: table-header-group !important;
 }
 .tarefa-item .tarefa-texts .description {
   font-style: normal;
@@ -213,7 +213,7 @@ svg {
   color: #000000;
   width: 230px;
   height: 50px;
-  display: table-header-group;
+  display: table-header-group !important;
 }
 .tarefa-item .tarefa-texts .prazo {
   padding-top: 5px;
@@ -328,7 +328,7 @@ footer .retangulo-footer #texto-footer {
     width: 89%;
     height: auto;
     margin-bottom: 24px;
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     padding-inline: 5%;
   }
