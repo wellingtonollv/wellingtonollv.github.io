@@ -239,18 +239,16 @@ html {
 
     .tarefa-texts {
         display: table!important;
-        
         height: 180px;
         table-layout: fixed;
 
         .name {
+            display: table-row-group!important;
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
             line-height: 19px;
             color: #414141;
-            display: table-header-group!important;
-
         }
 
         .description {

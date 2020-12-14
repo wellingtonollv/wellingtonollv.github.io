@@ -248,12 +248,12 @@ html {
 }
 
 .tarefa-item .tarefa-texts .name {
+  display: table-row-group !important;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 19px;
   color: #414141;
-  display: table-header-group !important;
 }
 
 .tarefa-item .tarefa-texts .description {
